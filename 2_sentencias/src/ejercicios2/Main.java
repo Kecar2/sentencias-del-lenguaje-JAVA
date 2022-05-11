@@ -13,11 +13,11 @@ public class Main {
 		//p6();
 		//p7();
 		//p8();
-		p9();
-		//p10i();
+		//p9();
+		//p10a();
 		//p11();
 		//p12();
-		//p13();
+		p13();
 		//p14();
 	}
 	
@@ -149,6 +149,58 @@ public class Main {
 			System.out.println(numero+" * "+i+" = "+ (numero*i));
 		}
 		}
+/////////////////////////////////////////////////////////////////////////////////////
+	
+	public static void p10a() {
+		int x = 3;
+		do {
+			if (x%2==0)
+				System.out.println("El numero " +x+" es par ");
+			x++;
+		}while (x < 100);
+	}
+	
+/////////////////////////////////////////////////////////////////////////////////////
+	
+	public static void p12() {
+		for(int  i=1; i<=5000; i++ ) {
+			System.out.println(i + " ");
+			if (i==25) {
+				break;
+			}
+		}
+	}
+	
+/////////////////////////////////////////////////////////////////////////////////////
+	
+	public static void p11() {
+		Scanner pepe = new Scanner(System.in);
+		System.out.println("Introduce num1:");
+		int a = pepe.nextInt();
+		System.out.println("Introduce num2:");
+		int b = pepe.nextInt();
+		System.out.println("Introduce num3:");
+		int c = pepe.nextInt();
+		System.out.println("Introduce num4:");
+		int d = pepe.nextInt();
+		System.out.println("Introduce num5:");
+		int e = pepe.nextInt();
+		int suma = a+b+c+d+e;
+		if (suma>100)
+		System.out.println("Te has pasado!!!");
+		else
+			System.out.println("la suma es "+suma);
+	}
+	
+	public static void p13() {
+		int i=3;
+		while (i<296) {
+			i++;
+			if (i%5==0) continue;
+			System.out.println(i + " ");
+		}	
+	}
+	
 	
 }
 	
