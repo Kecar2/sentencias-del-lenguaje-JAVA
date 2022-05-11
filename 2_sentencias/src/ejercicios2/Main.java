@@ -17,8 +17,10 @@ public class Main {
 		//p10a();
 		//p11();
 		//p12();
-		p13();
+		//p13();
 		//p14();
+		//p26();
+		p27();
 	}
 	
 /////////////////////////////////////////////////////////////////////////////////////
@@ -201,6 +203,32 @@ public class Main {
 		}	
 	}
 	
+	public static void p26() {
+		Scanner reader = new Scanner(System.in);
+		System.out.print("Introduzca num1: ");
+		int a = reader.nextInt();
+		System.out.print("Introduzaca num2: ");
+		int b = reader.nextInt();
+			if (a>b)
+				System.out.println(b + " , " + a);
+			else
+				System.out.println(a + " , "+ b);
+	}
+	
+	public static void p27() {
+		Scanner reader = new Scanner(System.in);
+		System.out.print("Introduzca num1: ");
+		double a = reader.nextDouble();
+		System.out.print("Introduzaca num2: ");
+		double b = reader.nextDouble();
+		System.out.print("Introduzaca num3: ");
+		double c = reader.nextDouble();
+		int contador = 0;
+		if (a<0) contador++;
+		if (b<0) contador++;
+		if (c<0) contador++;
+		System.out.println("Hay "+contador+" numero/s negativo/s");
+	}
 	
 }
 	
